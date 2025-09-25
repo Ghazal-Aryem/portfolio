@@ -47,7 +47,7 @@
             </div>
             <div class="about-content">
                 <div class="about-img animate-slide-in-left">
-                    <img src="IMG-20250712-WA0039-removebg-preview.png" alt="Ghazal Aryem">
+                    <img src="C:\Users\GhazalAryem\Downloads\portfolio\profile.png" alt="Ghazal Aryem">
                 </div>
                 <div class="about-text animate-slide-in-right">
                     <h3>Full Stack Developer & AI/ML Enthusiast</h3>
@@ -123,7 +123,7 @@
             <div class="projects-grid">
                 <div class="project-card animate-scale-in">
                     <div class="project-img">
-                        <img src="3legent.jpeg" alt="3legent E-Commerce">
+                        <img src="C:\Users\GhazalAryem\Downloads\portfolio\3legent.jpeg" alt="3legent E-Commerce">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">3legent E-Commerce Website</h3>
@@ -145,7 +145,7 @@
                 
                 <div class="project-card animate-scale-in">
                     <div class="project-img">
-                        <img src="Airrr.jpeg" alt="AIRRR AI Tool">
+                        <img src="C:\Users\GhazalAryem\Downloads\portfolio\Airrr.jpeg" alt="AIRRR AI Tool">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">AIRRR - AI Resume Recommendation for Recruiters</h3>
@@ -167,7 +167,7 @@
                 
                 <div class="project-card animate-scale-in">
                     <div class="project-img">
-                        <img src="BookStore.jpeg" alt="BookStore Management">
+                        <img src="C:\Users\GhazalAryem\Downloads\portfolio\bookStore.jpeg" alt="BookStore Management">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">BookStore Management System</h3>
@@ -189,7 +189,7 @@
 
                 <div class="project-card animate-scale-in">
                     <div class="project-img">
-                        <img src="Student-Management-System.png" alt="Student Management System">
+                        <img src="C:\Users\GhazalAryem\Downloads\portfolio\Student-Management-System.png" alt="Student Management System">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Student Management System</h3>
@@ -240,21 +240,27 @@
                     </div>
                 </div>
                 <div class="contact-form animate-slide-in-right">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
+                    <!-- <form action="https://api.web3forms.com/submit" method="POST" id="contactForm"> -->
+                    <form name="contact" method="POST" netlify id="contactForm">
+    <input type="hidden" name="form-name" value="contact">
+    
+    <div class="form-group">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+    </div>
+    <div class="form-group">
+        <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+</form>
+
+
+             <input type="hidden" name="redirect" value="/thank-you"> 
                 </div>
             </div>
         </div>

@@ -27,28 +27,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// Form submission with email functionality
+// Form submission with Netlify Forms
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
+    // Show loading state
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+    
     // Get form data
-    const name = this.querySelector('input[type="text"]').value;
-    const email = this.querySelector('input[type="email"]').value;
-    const subject = this.querySelectorAll('input[type="text"]')[1].value;
-    const message = this.querySelector('textarea').value;
+    const formData = new FormData(this);
     
-    // Create mailto link
-    const mailtoLink = `mailto:ghazalmariem911@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage: ${message}`)}`;
+    // Simple Netlify form handling with loading state
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    // Just show loading state, let Netlify handle the submission
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
     
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    // Show success message
-    alert('Thank you for your message! Your email client will open to send the message.');
-    this.reset();
+    // Re-enable button after 5 seconds in case submission fails
+    setTimeout(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }, 5000);
 });
-
 // Header background on scroll
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
