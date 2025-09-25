@@ -40,14 +40,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     // Get form data
     const formData = new FormData(this);
     
-    // Simple Netlify form handling with loading state
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    // Just show loading state, let Netlify handle the submission
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
-    
     // Re-enable button after 5 seconds in case submission fails
     setTimeout(() => {
         submitBtn.textContent = originalText;
