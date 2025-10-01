@@ -62,7 +62,7 @@ const About = () => {
                   fill
                   className="object-cover"
                   onError={(e) => {
-                    // Fallback if image doesn't exist
+                    // Fallback if image doesn&apos;t exist
                     e.target.style.display = 'none';
                     e.target.nextSibling.style.display = 'flex';
                   }}
@@ -131,17 +131,17 @@ const About = () => {
                 <h2 className="text-3xl font-bold mb-6 text-white">My Journey</h2>
                 <div className="space-y-4 text-gray-300">
                   <p>
-                    I'm Ghazal Aryem, a Computer Science graduate from National University of Modern Languages 
+                    I&apos;m Ghazal Aryem, a Computer Science graduate from National University of Modern Languages 
                     with a CGPA of 3.25/4.00. My passion lies in creating innovative solutions through full-stack 
                     development and machine learning.
                   </p>
                   <p>
-                    With experience in both industry and academic projects, I've developed expertise in Python, 
+                    With experience in both industry and academic projects, I&apos;ve developed expertise in Python, 
                     React/Next.js, FastAPI, and various machine learning frameworks. I enjoy turning complex 
                     problems into elegant, scalable solutions.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new technologies, contributing to projects, 
+                    When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to projects, 
                     or continuously learning to enhance my skills in this ever-evolving field.
                   </p>
                 </div>
@@ -197,7 +197,7 @@ const About = () => {
                 <div className="glass-effect rounded-2xl p-6">
                   <h3 className="text-xl font-bold mb-4 text-white">Education</h3>
                   <div className="space-y-2">
-                    <h4 className="text-white font-semibold">Bachelor's in Computer Science</h4>
+                    <h4 className="text-white font-semibold">Bachelor&apos;s in Computer Science</h4>
                     <p className="text-blue-400">National University of Modern Languages</p>
                     <p className="text-gray-300">2021 – 2025 | CGPA: 3.25/4.00</p>
                     <p className="text-gray-400 text-sm">Islamabad, Pakistan</p>

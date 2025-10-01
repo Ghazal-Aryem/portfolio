@@ -92,7 +92,7 @@ const Contact = () => {
               Get In <span className="gradient-text">Touch</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Have a project in mind? Let's discuss how we can work together to bring your ideas to life
+              Have a project in mind? Let&apos;s discuss how we can work together to bring your ideas to life
             </p>
           </div>
 
@@ -103,7 +103,7 @@ const Contact = () => {
                 <FiCheck className="text-green-400 text-2xl flex-shrink-0" />
                 <div>
                   <h3 className="text-green-400 font-semibold text-lg">Message Sent Successfully!</h3>
-                  <p className="text-green-300">Thank you for your message. I'll get back to you soon!</p>
+                  <p className="text-green-300">Thank you for your message. I&apos;ll get back to you soon!</p>
                 </div>
               </div>
             </div>
@@ -124,9 +124,9 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="animate-slide-up">
-              <h2 className="text-3xl font-bold mb-8 text-white">Let's Talk</h2>
+              <h2 className="text-3xl font-bold mb-8 text-white">Let&apos;s Talk</h2>
               <p className="text-gray-300 mb-8 text-lg">
-                I'm always interested in hearing about new opportunities and 
+                I&apos;m always interested in hearing about new opportunities and 
                 collaborating on exciting projects. Feel free to reach out!
               </p>
 

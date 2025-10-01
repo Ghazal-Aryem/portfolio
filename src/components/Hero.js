@@ -6,9 +6,9 @@ import { FiGithub, FiLinkedin, FiMail, FiArrowRight , FiDownload } from 'react-i
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const roles = ['Full Stack Developer', 'AI/ML Engineer', 'Python Developer', 'Problem Solver'];
 
   useEffect(() => {
+    const roles = ['Full Stack Developer', 'AI/ML Engineer', 'Python Developer', 'Problem Solver'];
     const currentRole = roles[currentIndex];
     let timeout;
 
@@ -24,8 +24,7 @@ const Hero = () => {
     }
 
     return () => clearTimeout(timeout);
-  }, [displayText, currentIndex, roles]);
-
+  }, [displayText, currentIndex]);
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background */}
@@ -38,11 +37,11 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10 mb-15">
         <div className="animate-fade-in mt-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Hi, I'm <span className="gradient-text">Ghazal Aryem</span>
+            Hi, I&apos;m <span className="gradient-text">Ghazal Aryem</span>
           </h1>
           
           <div className="text-2xl md:text-4xl font-light mb-8 h-12">
-            I'm a <span className="gradient-text font-semibold">{displayText}</span>
+            I&apos;m a <span className="gradient-text font-semibold">{displayText}</span>
             <span className="animate-pulse">|</span>
           </div>
 
