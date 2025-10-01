@@ -26,11 +26,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${
+    <nav className={`fixed w-full z-50 transition-all duration-300  ${
       scrolled ? 'glass-effect py-2' : 'bg-transparent py-4'
-    }`}>
+      }`}>
       <div className="container mx-auto px-6">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center ">
           <Link
             href="/"
             className="text-2xl font-bold gradient-text animate-float"

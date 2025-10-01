@@ -34,9 +34,9 @@ const Hero = () => {
         <div className="absolute bottom-1/4 left-1/2 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{ animationDelay: '2.5s' }}></div>
       </div>
 
-      <div className="container mx-auto px-6 text-center relative z-10 mb-15">
-        <div className="animate-fade-in mt-10">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+      <div className="container mx-auto px-6 text-center relative z-10 mb-15 mt-10">
+        <div className="animate-fade-in mt-10  ">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 ">
             Hi, I&apos;m <span className="gradient-text">Ghazal Aryem</span>
           </h1>
           
