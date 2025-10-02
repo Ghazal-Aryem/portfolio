@@ -8,7 +8,7 @@ const Experience = () => {
     {
       title: "Software Developer",
       company: "Alisco-it",
-      duration: "sep 2025 – present",
+      duration: "Sep 2025 – Present",
       location: "Islamabad, Pakistan",
       description: [
         "Solve the complex problems in both Web and Web App",
@@ -20,7 +20,7 @@ const Experience = () => {
     {
       title: "Full Stack Intern",
       company: "Siber Koza-NASTP",
-      duration: "Mar 2025 – jun 2025",
+      duration: "May 2025 – jul 2025",
       location: "NASTP, Rawalpindi, Pakistan",
       description: [
         "Design and develop the e-commerce platform in both Web and Web App",
