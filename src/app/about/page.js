@@ -17,7 +17,7 @@ const About = () => {
   ];
 
   const stats = [
-    { icon: FiAward, number: '3.25/4.00', text: 'CGPA at NUML' },
+    { icon: FiAward, number: '3.25/4.0', text: 'CGPA at NUML' },
     { icon: FiCode, number: '5+', text: 'Projects Completed' },
     { icon: FiUsers, number: '1', text: 'Professional Experiences' },
     { icon: FiCoffee, number: '4', text: 'Certifications' },

@@ -45,7 +45,7 @@ const Navbar = () => {
                 key={item.name}
                 href={item.path}
                 className={`relative transition-all duration-300 hover:text-blue-400 ${
-                  pathname === item.path ? 'text-blue-400 font-bold' : 'text-purple-400 font-bold'
+                  pathname === item.path ? 'text-blue-400 font-bold' : 'text-white font-bold'
                 }`}
               >
                 {item.name}
@@ -68,13 +68,13 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden absolute top-full left-0 w-full glass-effect animate-slide-up">
-            <div className="flex flex-col space-y-4 p-6">
+            <div className="flex flex-col space-y-4 p-6 ">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.path}
                   className={`text-lg transition-all duration-300 hover:text-blue-400 ${
-                    pathname === item.path ? 'text-blue-400 font-bold' : 'text-purple-400 font-bold'
+                    pathname === item.path ? 'text-blue-400 font-bold' : 'text-white font-bold'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >

@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <p className="text-gray-300 flex items-center justify-center md:justify-start gap-1">
-              Made with <FiHeart className="text-red-500 animate-pulse" /> by GHazal Aryem
+              Made with <FiHeart className="text-red-500 animate-pulse" /> by Ghazal Aryem
             </p>
           </div>
           
@@ -30,7 +30,7 @@ const Footer = () => {
         
         <div className="text-center mt-4 pt-4 border-t border-white/10">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} GHazal Aryem. All rights reserved.
+            © {new Date().getFullYear()} Ghazal Aryem. All rights reserved.
           </p>
         </div>
       </div>
